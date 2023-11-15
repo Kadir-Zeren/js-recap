@@ -216,8 +216,50 @@ while (s <= 10) {
 // }
 // console.log(nb);
 
-let nb = prompt("0-100 enter number");
-do {
-  nb = prompt("tekrar");
-} while (nb < 0 || nb > 100);
-console.log(nb);
+// let nb = prompt("0-100 enter number");
+// do {
+//   nb = prompt("tekrar");
+// } while (nb < 0 || nb > 100);
+// console.log(nb);
+
+function writeHello() {
+  console.log("hello js");
+}
+
+writeHello();
+writeHello();
+writeHello();
+
+function writeParametre(msg = "sa", year = "as") {
+  console.log(msg, year);
+}
+
+writeParametre("Hi", "2023");
+writeParametre("hola", "2024");
+writeParametre("hola");
+writeParametre();
+
+function calculate(name, yob) {
+  const age = new Date().getFullYear() - yob;
+  console.log(`${name} is ${age} years old`);
+  return age;
+}
+calculate("ahmet", 1990);
+const age = calculate("ahmet", 1990);
+console.log(age);
+
+console.log("ismet's age ", age);
+
+function add(num1, num2) {
+  return num1 + num2;
+}
+const result = add(5, 8);
+const result2 = add(3, 2);
+console.log(result, result2);
+
+const prom = prompt("enter number");
+function isEvenOrOdd(n1) {
+  return n1 % 2 === 0 ? "even" : "odd";
+}
+
+console.log(`${prom} is ${isEvenOrOdd(prom)}`);

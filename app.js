@@ -385,10 +385,10 @@ console.log(numbr1);
 // console.log(typeof str2);
 // console.log(typeof str3);
 // console.log(typeof str4);
-let str1 = "hello";
-let str2 = "world";
-let str3 = " ";
-let str4 = str1 + str3 + str2;
+// let str1 = "hello";
+// let str2 = "world";
+// let str3 = " ";
+// let str4 = str1 + str3 + str2;
 
 // console.log(str4);
 
@@ -407,3 +407,16 @@ for (let i = 0; i < str.length; i++) {
 for (let i = str.length; i > 0; i--) {
   console.log(str[i - 1]);
 }
+
+// let str1 = "World";
+// str1[2] = "a";
+// console.log(str1);
+// str1 = "pencil";
+// console.log(str1);
+
+let str1 = 'I"m a string';
+console.log(str1);
+const str2 = "I'm a\0string";
+console.log(str2);
+
+console.log("1-ders\n2-okul\nservis");

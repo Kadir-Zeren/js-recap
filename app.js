@@ -296,3 +296,44 @@ console.log(findBiggest(9, 8, 7));
 
 const findBiggestShort = (p1, p2, p3) => Math.max(p1, p2, p3);
 console.log(findBiggestShort(11, 12, 13));
+
+// const r = prompt("enter r:");
+// const h = prompt("enter h:");
+
+// const voulme = (r, h) => Math.PI * r * r * h;
+// console.log(voulme(r, h).toPrecision(4));
+
+const ad = (value1, value2) => value1 + value2;
+const mul = (value1, value2) => value1 * value2;
+const sub = (value1, value2) => value1 - value2;
+const div = (value1, value2) => value1 / value2;
+const compute = (value1, value2, operator) => {
+  let result = 0;
+  switch (operator) {
+    case "+":
+      result = ad(value1, value2);
+
+      break;
+    case "-":
+      result = sub(value1, value2);
+      break;
+    case "*":
+      result = mul(value1, value2);
+      break;
+    case "/":
+      result = div(value1, value2);
+      break;
+    default:
+      alert("incorrect operator");
+      result = "";
+      break;
+  }
+  return result;
+};
+
+const value1 = prompt("enter value1");
+const value2 = prompt("enter value2");
+const operator = prompt("operator");
+console.log(
+  `${value1}${operator}${value2} ${compute(value1, value2, operator)}`
+);

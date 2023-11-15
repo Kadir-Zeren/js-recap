@@ -94,3 +94,62 @@ console.log("a" * 3);
 
 console.log("5" * " 9 ");
 console.log(typeof ("5" * "9"));
+
+const bol1 = 81;
+const bol2 = 9;
+
+console.log(bol1 / bol2);
+console.log(bol1 / "9");
+console.log(bol1 / "nine");
+console.log(bol1 / 0);
+console.log(bol1 / "0");
+console.log(-61 / 0);
+console.log(0 / 5);
+console.log(0 / -5);
+
+console.log(57 / 9);
+
+const mod1 = 57;
+const mod2 = 9;
+
+console.log(mod1 % mod2);
+
+console.log(22 % 7);
+
+const my = 967;
+
+const firstN = my % 10;
+
+console.log(firstN);
+
+const secondN = (my % 100) / 10;
+console.log(secondN);
+const thirdN = my / 100;
+console.log(thirdN);
+
+console.log(
+  `thirdN: ${Math.trunc(thirdN)}, secondN: ${Math.trunc(
+    secondN
+  )}, firstN: ${firstN}`
+);
+
+const number = 56.78888;
+
+console.log(`${number.toFixed(2)}`);
+console.log(`${Math.floor(number)}`);
+console.log(`${Math.ceil(number)}`);
+console.log(`${Math.trunc(number)}`);
+console.log(`${Math.round(number)}`);
+
+const randomNum = Math.random() * 220;
+console.log(randomNum);
+
+const us1 = 2;
+const us2 = 3;
+console.log(us1 ** us2);
+
+let art = 6;
+let artNew = art++;
+
+console.log(artNew);
+console.log(art);

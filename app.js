@@ -174,7 +174,7 @@ const dolarInt = parseFloat(dolar);
 console.log(dolarInt);
 
 // const jobTime = prompt("enter your job times");
-let pay = prompt("ennter your pay");
+// let pay = prompt("ennter your pay");
 
 // if (jobTime >= 10) {
 //   pay = pay * 1.1;
@@ -184,8 +184,21 @@ let pay = prompt("ennter your pay");
 //   console.log("sorry :(", pay);
 // }
 let p = 5;
-console.log(pay > 10 ? "yes" : "no ");
+// console.log(pay > 10 ? "yes" : "no ");
 
-pay > 10 && (p = 18);
+// pay > 10 && (p = 18);
 
 console.log(p);
+
+for (let i = 1; i <= 100; i++) {
+  console.log(`${i}. sayi ${i}`);
+}
+for (let i = 1; i <= 100; i *= 2) {
+  console.log(`${i}. sayi ${i}`);
+}
+
+const n = prompt("sayi gir");
+for (let i = 0; i < n; i++) {
+  let j = Math.random();
+  console.log(j);
+}

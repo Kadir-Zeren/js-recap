@@ -221,7 +221,7 @@ while (s <= 10) {
 //   nb = prompt("tekrar");
 // } while (nb < 0 || nb > 100);
 // console.log(nb);
-
+writeHello();
 function writeHello() {
   console.log("hello js");
 }
@@ -257,9 +257,20 @@ const result = add(5, 8);
 const result2 = add(3, 2);
 console.log(result, result2);
 
-const prom = prompt("enter number");
-function isEvenOrOdd(n1) {
-  return n1 % 2 === 0 ? "even" : "odd";
-}
+// const prom = prompt("enter number");
+// function isEvenOrOdd(n1) {
+//   return n1 % 2 === 0 ? "even" : "odd";
+// }
 
-console.log(`${prom} is ${isEvenOrOdd(prom)}`);
+// console.log(`${prom} is ${isEvenOrOdd(prom)}`);
+
+const write = function (messag) {
+  console.log(messag);
+};
+
+write("hello js");
+
+let oddEven = function (nbr) {
+  console.log(nbr);
+};
+oddEven(5);

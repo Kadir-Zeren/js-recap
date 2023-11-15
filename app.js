@@ -153,3 +153,39 @@ let artNew = art++;
 
 console.log(artNew);
 console.log(art);
+
+let newNumber = ++art;
+console.log(newNumber);
+let nums1 = 14;
+let nums2 = 17;
+nums2 += nums1;
+console.log(nums2);
+console.log(num2 == num1);
+
+const a = "a";
+console.log(a);
+console.log(5 && 0);
+
+// let pro = prompt("sayi gir ");
+// console.log(++pro);
+
+const dolar = 1000.3;
+const dolarInt = parseFloat(dolar);
+console.log(dolarInt);
+
+// const jobTime = prompt("enter your job times");
+let pay = prompt("ennter your pay");
+
+// if (jobTime >= 10) {
+//   pay = pay * 1.1;
+//   console.log("new pay:", pay);
+//   console.log(`new pay:, ${pay}`);
+// } else {
+//   console.log("sorry :(", pay);
+// }
+let p = 5;
+console.log(pay > 10 ? "yes" : "no ");
+
+pay > 10 && (p = 18);
+
+console.log(p);

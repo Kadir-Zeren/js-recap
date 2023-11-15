@@ -340,22 +340,32 @@ console.log(findBiggestShort(11, 12, 13));
 
 // const nn1 = prompt("enter number");
 
-const fakto = (faktor) => {
-  let result = 1;
-  for (let i = faktor; i > 1; i--) {
-    result = i * result;
-  }
-  return result;
+// const fakto = (faktor) => {
+//   let result = 1;
+//   for (let i = faktor; i > 1; i--) {
+//     result = i * result;
+//   }
+//   return result;
+// };
+
+// const faktor = prompt("enter faktor");
+// console.log(fakto(faktor));
+
+// const recursion = (faktor) => {
+//   if (faktor <= 1) {
+//     return 1;
+//   } else {
+//     return faktor * recursion(faktor - 1);
+//   }
+// };
+// console.log(recursion(faktor));
+
+let numbr1 = 3;
+console.log(numbr1);
+
+const funk1 = () => {
+  numbr1 = 44;
 };
 
-const faktor = prompt("enter faktor");
-console.log(fakto(faktor));
-
-const recursion = (faktor) => {
-  if (faktor <= 1) {
-    return 1;
-  } else {
-    return faktor * recursion(faktor - 1);
-  }
-};
-console.log(recursion(faktor));
+funk1();
+console.log(numbr1);

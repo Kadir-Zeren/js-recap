@@ -209,9 +209,15 @@ while (s <= 10) {
   s++;
 }
 
-let nb = prompt("0-100 enter number");
+// let nb = prompt("0-100 enter number");
 
-while (nb < 0 || nb > 100) {
-  nb = prompt("again");
-}
+// while (nb < 0 || nb > 100) {
+//   nb = prompt("again");
+// }
+// console.log(nb);
+
+let nb = prompt("0-100 enter number");
+do {
+  nb = prompt("tekrar");
+} while (nb < 0 || nb > 100);
 console.log(nb);

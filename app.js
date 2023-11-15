@@ -369,3 +369,41 @@ const funk1 = () => {
 
 funk1();
 console.log(numbr1);
+
+// let str1 = "this is a string";
+// let str2 = "this is a string";
+// let str3 = `this is a string`;
+// let str4 = new String("this is a string");
+
+// console.log(str1[2]);
+
+// console.log(str2);
+// console.log(str3);
+// console.log(str4[Number((Math.random() * 16).toFixed(0))]);
+
+// console.log(typeof str1);
+// console.log(typeof str2);
+// console.log(typeof str3);
+// console.log(typeof str4);
+let str1 = "hello";
+let str2 = "world";
+let str3 = " ";
+let str4 = str1 + str3 + str2;
+
+// console.log(str4);
+
+// console.log(str1);
+// console.log(str3.length);
+// console.log(str4.length);
+// console.log(str1[10]);
+// console.log(str1[4]);
+
+const str = "hello world";
+
+for (let i = 0; i < str.length; i++) {
+  console.log(str[i]);
+}
+
+for (let i = str.length; i > 0; i--) {
+  console.log(str[i - 1]);
+}

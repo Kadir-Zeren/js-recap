@@ -274,3 +274,25 @@ let oddEven = function (nbr) {
   console.log(nbr);
 };
 oddEven(5);
+
+const square = (num, numm) => num * numm;
+const suare = () => console.log("first");
+
+console.log(square(5, 2));
+
+suare();
+
+const findBiggest = (v1, v2, v3) => {
+  let biggest = v1;
+  if (v2 > v1) {
+    biggest = v2;
+  }
+  if (v3 > v1) {
+    biggest = v3;
+  }
+  return biggest;
+};
+console.log(findBiggest(9, 8, 7));
+
+const findBiggestShort = (p1, p2, p3) => Math.max(p1, p2, p3);
+console.log(findBiggestShort(11, 12, 13));

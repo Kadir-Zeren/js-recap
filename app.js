@@ -197,8 +197,21 @@ for (let i = 1; i <= 100; i *= 2) {
   console.log(`${i}. sayi ${i}`);
 }
 
-const n = prompt("sayi gir");
-for (let i = 0; i < n; i++) {
-  let j = Math.random();
-  console.log(j);
+// const n = prompt("sayi gir");
+// for (let i = 0; i < n; i++) {
+//   let j = Math.random();
+//   console.log(j);
+// }
+
+let s = 1;
+while (s <= 10) {
+  console.log(s);
+  s++;
 }
+
+let nb = prompt("0-100 enter number");
+
+while (nb < 0 || nb > 100) {
+  nb = prompt("again");
+}
+console.log(nb);

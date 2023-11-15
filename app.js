@@ -303,37 +303,59 @@ console.log(findBiggestShort(11, 12, 13));
 // const voulme = (r, h) => Math.PI * r * r * h;
 // console.log(voulme(r, h).toPrecision(4));
 
-const ad = (value1, value2) => value1 + value2;
-const mul = (value1, value2) => value1 * value2;
-const sub = (value1, value2) => value1 - value2;
-const div = (value1, value2) => value1 / value2;
-const compute = (value1, value2, operator) => {
-  let result = 0;
-  switch (operator) {
-    case "+":
-      result = ad(value1, value2);
+// const ad = (value1, value2) => value1 + value2;
+// const mul = (value1, value2) => value1 * value2;
+// const sub = (value1, value2) => value1 - value2;
+// const div = (value1, value2) => value1 / value2;
+// const compute = (value1, value2, operator) => {
+//   let result = 0;
+//   switch (operator) {
+//     case "+":
+//       result = ad(value1, value2);
 
-      break;
-    case "-":
-      result = sub(value1, value2);
-      break;
-    case "*":
-      result = mul(value1, value2);
-      break;
-    case "/":
-      result = div(value1, value2);
-      break;
-    default:
-      alert("incorrect operator");
-      result = "";
-      break;
+//       break;
+//     case "-":
+//       result = sub(value1, value2);
+//       break;
+//     case "*":
+//       result = mul(value1, value2);
+//       break;
+//     case "/":
+//       result = div(value1, value2);
+//       break;
+//     default:
+//       alert("incorrect operator");
+//       result = "";
+//       break;
+//   }
+//   return result;
+// };
+
+// const value1 = prompt("enter value1");
+// const value2 = prompt("enter value2");
+// const operator = prompt("operator");
+// console.log(
+//   `${value1}${operator}${value2} ${compute(value1, value2, operator)}`
+// );
+
+// const nn1 = prompt("enter number");
+
+const fakto = (faktor) => {
+  let result = 1;
+  for (let i = faktor; i > 1; i--) {
+    result = i * result;
   }
   return result;
 };
 
-const value1 = prompt("enter value1");
-const value2 = prompt("enter value2");
-const operator = prompt("operator");
-console.log(
-  `${value1}${operator}${value2} ${compute(value1, value2, operator)}`
-);
+const faktor = prompt("enter faktor");
+console.log(fakto(faktor));
+
+const recursion = (faktor) => {
+  if (faktor <= 1) {
+    return 1;
+  } else {
+    return faktor * recursion(faktor - 1);
+  }
+};
+console.log(recursion(faktor));

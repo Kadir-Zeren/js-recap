@@ -34,3 +34,12 @@ console.log(language);
 
 let adet;
 console.log(adet);
+
+adet = `23`;
+console.log(typeof adet);
+
+{
+  let localDegisken = 5;
+  localDegisken = localDegisken + 1;
+  console.log(localDegisken);
+}
